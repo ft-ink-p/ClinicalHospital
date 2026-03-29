@@ -49,6 +49,6 @@ public class Consulta {
 
     @Override
     public String toString() {
-        return "Consulta: [Fecha: " + fecha + ", Motivo: " + motivo + ", Diagnóstico: " + diagnostico + ", Duración: " + duracionMinutos + " min]";
+        return "Consulta: [Fecha: " + fecha + ", Motivo: " + motivo + ", Diagnostico: " + diagnostico + ", Duracion: " + duracionMinutos + " min]";
     }
 }

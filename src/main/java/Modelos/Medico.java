@@ -39,17 +39,23 @@ public class Medico extends Persona {
 
     @Override
     public String toString() {
-        return "Medico{" + "tarjetaProfesional=" + tarjetaProfesional + ", especializacion=" + especializacion + ", consultorio=" + consultorio + '}';
+        return super.toString()+ "Medico{" + "tarjetaProfesional=" + tarjetaProfesional + ", especializacion=" + especializacion + ", consultorio=" + consultorio + '}';
     }
    
     public void atender(Consulta c){
-        System.out.println("===Consulta-medica===");
-        System.out.println("Nombre de Medioc '"+ getNombre() + "' Motivo de consulta '"+ c.getMotivo());
+        System.out.println("\n===Consulta-medica===\n");
+        System.out.println("Nombre de Medico '"+ getNombre() + "' Motivo de consulta '"+ c.getMotivo());
         System.out.println("Fecha de Consulta '"+ c.getFecha()+"'");
         System.out.println("-Toma de datos.....\n.....\n.....\n.....\n.....");
         System.out.println("Diagnostico  de consulta '"+ c.getDiagnostico()+"'");
-        System.out.println("===FIN DE CONSULTA===");
+        System.out.println("\n===FIN DE CONSULTA=== \n");
     }
+    
+    public void presentar(){
+        System.out.println("\n===Presentarse===\n");
+        System.out.println("Buenos dias, se encuentra con el medico '"+ getNombre()+ "' Con especializacion en '"+getEspecializacion() +"' en el consultorio '"+getConsultorio()+"'\n");
+    }
+    
 }
 
 

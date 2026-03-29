@@ -54,12 +54,12 @@ public class Persona {
     }
     
     public String Verificador(){
-        if(this.edad >=18 && this.edad <= 60 ){
-            return "El paciente es un MAYOR de Edad (no necesita acompañante)";
+        if(this.edad >=20 && this.edad <=60 ){
+            return "La persona es mayor de  edad \n";
         } else if (this.edad <= 18 ) {
-            return "El paciente es un MENOR de edad (Se necesita acompañante)";
+            return "La persona es menor de edad \n";
         } else {
-             return "El paciente es un Adulto mayor (se recomienda acompañante)";
+             return "La persona es un Adulto mayor (mayor de 60) \n";
         }
     }
     

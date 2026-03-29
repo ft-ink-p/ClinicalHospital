@@ -7,10 +7,9 @@ public class Hospital {
     private String ciudad;
     private ArrayList<Consulta>consultas;
 
-    public Hospital(String nombre, String ciudad, ArrayList<Consulta> consultas) {
+    public Hospital(String nombre, String ciudad) {
         this.nombre = nombre;
         this.ciudad = ciudad;
-        this.consultas = consultas;
         this.consultas = new ArrayList<>();     
     }
 
@@ -41,5 +40,14 @@ public class Hospital {
     public void registrarConsulta(Consulta c){
         this.consultas.add(c);
         System.out.println("===Consulta registrada con exito===");
+    }
+    
+    public void listaConsulta(){
+        System.out.println("-Lista de consultas-");
+        for( Consulta c : consultas ){
+            System.out.println("----------");
+            System.out.println(c.toString());
+            System.out.println("----------");
+        }
     }
 }
